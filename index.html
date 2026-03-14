@@ -2104,5 +2104,15 @@ function openRolesModalFromPanel(){if(!activeSrv){toast('Sélectionne un serveur
 // Fix roles button in rp-srv
 document.addEventListener('DOMContentLoaded',()=>{const btn=document.querySelector('#rp-srv .btns[onclick*="m-roles"]');if(btn)btn.onclick=()=>openRolesModalFromPanel();});
 </script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script>
+
+const supabaseUrl = "sb_publishable_dHefjA8CsLRDehvFex4Zyg_upkO3jPU";
+const supabaseKey = "sb_secret_71fRP47pOd0LUPE5JhWvvw_eSK4bnSJ";
+
+const supabaseClient = supabase.createClient(supabaseUrl, supabaseKey);
+
+</script>
 </body>
 </html>
